@@ -45,5 +45,11 @@
 		"rootPath": "$home/code/crystal/create_repo",
 		"paths": [],
 		"group": "crystal"
+	},
+	{
+		"name": "dotfiles",
+		"rootPath": "$home/dotfiles",
+		"paths": [],
+		"group": "system"
 	}
 ]
