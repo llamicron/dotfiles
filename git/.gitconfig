@@ -1,1 +1,7 @@
-/Users/llamicron/.gitconfig
+[user]
+	name = Luke Sweeney
+	email = luke@thesweeneys.org
+[color]
+	ui = true
+[core]
+	autocrlf = true
