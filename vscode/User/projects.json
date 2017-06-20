@@ -51,5 +51,11 @@
 		"rootPath": "$home/dotfiles",
 		"paths": [],
 		"group": "system"
+	},
+	{
+		"name": "push dotfiles",
+		"rootPath": "$home/code/ruby/push_dotfiles",
+		"paths": [],
+		"group": "ruby"
 	}
 ]
