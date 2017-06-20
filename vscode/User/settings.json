@@ -1,0 +1,88 @@
+// This is a test of my dotfiles repo
+{
+    // Font
+    "editor.fontFamily": "Fira code",
+    "editor.fontSize": 20,
+    "editor.lineHeight": 35,
+
+    // Theme and Appearance
+    "workbench.colorTheme": "Nord",
+    "window.zoomLevel": 0,
+    "editor.roundedSelection": true,
+    "editor.rulers": [60],
+    "editor.cursorBlinking": "phase",
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "off",
+    "editor.fontLigatures": true,
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": "line",
+    "editor.codeLens": true,
+    "editor.selectionHighlight": false,
+    "editor.minimap.enabled": false,
+
+    // Files
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.vscode": true
+    },
+
+    // Behavior
+    "editor.formatOnPaste": true,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.tabCompletion": true,
+
+    // Terminal
+    "terminal.external.osxExec": "Iterm2",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.cursorStyle": "line",
+
+    // Tabs
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+
+    // Workbench
+    "workbench.tips.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+
+    // File Explorer
+    "explorer.openEditors.visible": 0,
+
+    // Search
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/.shards": true
+    },
+
+
+    // Getting around Microsoft's bullshit
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    // Language overrides
+    "[python]": {
+        "editor.tabSize": 4
+    },
+
+    // Git
+    "git.path": "/usr/bin/git",
+    "workbench.welcome.enabled": false,
+    "workbench.statusBar.visible": true,
+
+    // Extenstions
+
+    // Journal
+    "journal.base": "/Users/llamicron/.journal/",
+    "journal.tpl-task": "* [ ] TASK: {content}",
+    "git.enableSmartCommit": true
+}

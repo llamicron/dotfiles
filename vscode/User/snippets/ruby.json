@@ -1,0 +1,86 @@
+{
+	"Require Relative": {
+		"prefix": "rel",
+		"body": "require_relative \"$1\"",
+		"description": "Require relative statement"
+	},
+
+	// Rspec
+	"describe": {
+		"prefix": "desc",
+		"body": [
+			"describe \".$1\" do",
+			"\t$2",
+			"end"
+		],
+		"description": "Rspec describe"
+	},
+
+	"it": {
+		"prefix": "it",
+		"body": [
+			"it \"$1\" do",
+			"\t$2",
+			"end"
+		],
+		"description": "Rspec it"
+	},
+
+	"context": {
+		"prefix": "cont",
+		"body": [
+			"context \"when $1\" do",
+			"\t$2",
+			"end"
+		],
+		"description": "Context block for rspec"
+	},
+
+	"before it": {
+		"prefix": "before it",
+		"body": "before { $1 }",
+		"description": "To run before an rspec example"
+	},
+
+	"before block": {
+		"prefix": "before",
+		"body": [
+			"before :${1:each} do",
+			"\t$2",
+			"end"
+		],
+		"description": "Before rspec examples block"
+	},
+
+	"expect": {
+		"prefix": "exp",
+		"body": "expect($1).${2:to} $3",
+		"description": "Rspec expect statement"
+	},
+
+	// Temporary
+	"members each": {
+		"prefix": "membereach",
+		"body": [
+			"@members.each do |member|",
+			"\t$1",
+			"end"
+		],
+		"description": "@members.each loop"
+	},
+
+	"todo": {
+		"prefix": "todo",
+		"body": "# TODO: ",
+		"description": "makes a todo comment"
+	},
+
+	"SQL": {
+		"prefix": "SQL",
+		"body": [
+			"${1:sql} = <<-${2:SQL}",
+			"\t${3:STATEMENT}",
+			"${2:SQL}"
+		]
+	}
+}

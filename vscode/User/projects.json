@@ -1,0 +1,49 @@
+[
+	{
+		"name": "faker",
+		"rootPath": "$home/code/ruby/faker",
+		"group": "ruby"
+	},
+	{
+		"name": "adaptibrew",
+		"rootPath": "$home/code/python/adaptibrew",
+		"group": "python"
+	},
+	{
+		"name": "test bed adaptibrew",
+		"rootPath": "/Volumes/pi/llamicron-adaptibrew",
+		"group": "python"
+	},
+	{
+		"name": "genetics",
+		"rootPath": "$home/code/ruby/genetics",
+		"group": "ruby"
+	},
+	{
+		"name": "test bed brewer",
+		"rootPath": "/Volumes/pi/brewer",
+		"group": "ruby"
+	},
+	{
+		"name": "crystal lang",
+		"rootPath": "$home/code/crystal/crystal-lang",
+		"group": "crystal"
+	},
+	{
+		"name": "md_link_generator",
+		"rootPath": "$home/code/crystal/md_link_generator",
+		"group": "crystal"
+	},
+	{
+		"name": "connect",
+		"rootPath": "$home/code/crystal/connect",
+		"paths": [],
+		"group": "crystal"
+	},
+	{
+		"name": "create repo",
+		"rootPath": "$home/code/crystal/create_repo",
+		"paths": [],
+		"group": "crystal"
+	}
+]
