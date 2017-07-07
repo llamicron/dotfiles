@@ -31,18 +31,18 @@
 	},
 	{
 		"name": "md_link_generator",
-		"rootPath": "$home/code/crystal/md_link_generator",
+		"rootPath": "$home/code/CRUD/md_link_generator",
 		"group": "crystal"
 	},
 	{
 		"name": "connect",
-		"rootPath": "$home/code/crystal/connect",
+		"rootPath": "$home/code/CRUD/connect",
 		"paths": [],
 		"group": "crystal"
 	},
 	{
 		"name": "create repo",
-		"rootPath": "$home/code/crystal/create_repo",
+		"rootPath": "$home/code/CRUD/create_repo",
 		"paths": [],
 		"group": "crystal"
 	},
@@ -54,8 +54,20 @@
 	},
 	{
 		"name": "push dotfiles",
-		"rootPath": "$home/code/ruby/push_dotfiles",
+		"rootPath": "$home/code/CRUD/push_dotfiles",
 		"paths": [],
 		"group": "ruby"
+	},
+	{
+		"name": "learn you a haskell",
+		"rootPath": "$home/code/haskell/learn_you_a_haskell",
+		"paths": [],
+		"group": "haskell"
+	},
+	{
+		"name": "CRUD",
+		"rootPath": "$home/code/CRUD",
+		"paths": [],
+		"group": ""
 	}
 ]
