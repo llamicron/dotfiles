@@ -35,8 +35,8 @@
 		"group": "crystal"
 	},
 	{
-		"name": "connect",
-		"rootPath": "$home/code/CRUD/connect",
+		"name": "servers",
+		"rootPath": "$home/code/CRUD/servers",
 		"paths": [],
 		"group": "crystal"
 	},
@@ -67,6 +67,18 @@
 	{
 		"name": "CRUD",
 		"rootPath": "$home/code/CRUD",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "learn js",
+		"rootPath": "$home/code/js/learn",
+		"paths": [],
+		"group": "javascript"
+	},
+	{
+		"name": "sandbox",
+		"rootPath": "$home/code/sandbox",
 		"paths": [],
 		"group": ""
 	}

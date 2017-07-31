@@ -78,10 +78,15 @@
     "workbench.welcome.enabled": false,
     "workbench.statusBar.visible": true,
 
-    // Extenstions
+    // Extensions
+
+    // Project Manager
+    "projectManager.sortList": "Path",
 
     // Journal
     "journal.base": "/Users/llamicron/.journal/",
     "journal.tpl-task": "* [ ] TASK: {content}",
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd"
 }

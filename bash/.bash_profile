@@ -3,9 +3,6 @@
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 
-# Aliases
-alias sween="ssh pi@sween"
-
 source ~/.bashrc
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

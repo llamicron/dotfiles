@@ -11,7 +11,6 @@ alias http="python -m SimpleHTTPServer"
 # At home
 # alias brewpi-test="ssh pi@192.168.0.224"
 # At A&M
-alias brewpi-test="ssh pi@165.91.84.249"
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
