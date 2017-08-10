@@ -6,11 +6,6 @@
 	},
 	{
 		"name": "adaptibrew",
-		"rootPath": "$home/code/python/adaptibrew",
-		"group": "python"
-	},
-	{
-		"name": "test bed adaptibrew",
 		"rootPath": "/Volumes/pi/llamicron-adaptibrew",
 		"group": "python"
 	},
@@ -20,7 +15,7 @@
 		"group": "ruby"
 	},
 	{
-		"name": "test bed brewer",
+		"name": "brewer",
 		"rootPath": "/Volumes/pi/brewer",
 		"group": "ruby"
 	},
@@ -74,12 +69,42 @@
 		"name": "learn js",
 		"rootPath": "$home/code/js/learn",
 		"paths": [],
-		"group": "javascript"
+		"group": "js"
 	},
 	{
 		"name": "sandbox",
 		"rootPath": "$home/code/sandbox",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "learn python",
+		"rootPath": "$home/code/python/learn",
+		"paths": [],
+		"group": "python"
+	},
+	{
+		"name": "HackerRank",
+		"rootPath": "$home/code/HR",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "vue",
+		"rootPath": "$home/code/js/vue",
+		"paths": [],
+		"group": "js"
+	},
+	{
+		"name": "brewer_network",
+		"rootPath": "$home/code/python/brewer_network",
+		"paths": [],
+		"group": "python"
+	},
+	{
+		"name": "smooth scroll bug",
+		"rootPath": "$home/code/js/smooth-scroll-bug",
+		"paths": [],
+		"group": "js"
 	}
 ]

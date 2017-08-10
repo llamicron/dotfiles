@@ -42,5 +42,14 @@
     {
         "key": "alt+t",
         "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus"
     }
 ]
