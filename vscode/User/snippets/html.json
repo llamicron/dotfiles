@@ -1,5 +1,5 @@
 {
-/*
+	/*
 	// Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
@@ -14,76 +14,69 @@
 		"description": "Log output to console"
 	}
 */
-	"Bootstrap CDN": {
-		"prefix": "bootstrap",
-		"body": [
-			"<!-- Latest compiled and minified CSS -->",
-			"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">",
-			"<!-- jQuery library -->",
-			"<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>",
-			"<!-- Latest compiled JavaScript -->",
-			"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>",
-			"$1"
-		]
-	},
-
-	"Font Awesome CDN": {
-		"prefix": "fa",
-		"body": "<script src=\"https: //use.fontawesome.com/cc35b7b927.js\"></script>",
-		"description": "Font Awesome CDN link"
-	},
-
-	"Raleway Font": {
-			"prefix": "raleway",
-			"body": "<link href=\"https: //fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">",
-			"description": "Link to the Raleway Google Font"
-	},
-
-	"Jinja Tag": {
-		"prefix": "{%",
-		"body": "{% $1 %",
-		"description": "Jinja python tag"
-	},
-
-	"Jinja If": {
-		"prefix": "if",
-		"body": [
-			"{% if $1 %}",
-			"\t$2",
-			"{% endif %}"
-		]
-	}
-
-	// Bulma CSS
-	"Bulma CSS": {
-		"prefix": "bulma",
-		"body": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css\">",
-		"description": "Bulma CSS CDN link"
-	},
-
-	"Bulma Hero": {
-		"prefix": "bulma-hero",
-		"body": [
-			"<section class=\"hero is-${1:primary}\">",
-			"\t<div class=\"hero-body\">",
-			"\t\t<div class=\"container\">",
-			"\t\t\t<h1 class=\"title\">",
-			"\t\t\t\t${2:Primary title}",
-			"\t\t\t</h1>",
-			"\t\t\t${3:<h2 class=\"subtitle\">",
-			"\t\t\t\t${4:Primary subtitle}",
-			"\t\t\t</h2>}",
-			"\t\t</div>",
-			"\t</div>",
-			"</section>"
-		],
-		"description": "Bulma Regular Hero"
-	},
-
-	"Bulma Full Height Hero": {
-		"prefix": "bulma-hero-full",
-		"body": [
-			"<section class=\"hero is-${1:primary} is-fullheight\">"
+"Bootstrap CDN": {
+	"prefix": "bootstrap",
+	"body": [
+		"<!-- Latest compiled and minified CSS -->",
+		"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">",
+		"<!-- jQuery library -->",
+		"<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>",
+		"<!-- Latest compiled JavaScript -->",
+		"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>",
+		"$1"
+	]
+},
+"Font Awesome CDN": {
+	"prefix": "fa",
+	"body": "<script src=\"https: //use.fontawesome.com/cc35b7b927.js\"></script>",
+	"description": "Font Awesome CDN link"
+},
+"Raleway Font": {
+	"prefix": "raleway",
+	"body": "<link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">",
+	"description": "Link to the Raleway Google Font"
+},
+"Jinja Tag": {
+	"prefix": "{%",
+	"body": "{% $1 %",
+	"description": "Jinja python tag"
+},
+"Jinja If": {
+	"prefix": "if",
+	"body": [
+		"{% if $1 %}",
+		"\t$2",
+		"{% endif %}"
+	]
+}
+// Bulma CSS
+"Bulma CSS": {
+	"prefix": "bulma",
+	"body": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css\">",
+	"description": "Bulma CSS CDN link"
+},
+"Bulma Hero": {
+	"prefix": "bulma-hero",
+	"body": [
+		"<section class=\"hero is-${1:primary}\">",
+		"\t<div class=\"hero-body\">",
+		"\t\t<div class=\"container\">",
+		"\t\t\t<h1 class=\"title\">",
+		"\t\t\t\t${2:Primary title}",
+		"\t\t\t</h1>",
+		"\t\t\t${3:<h2 class=\"subtitle\">",
+		"\t\t\t\t${4:Primary subtitle}",
+		"\t\t\t</h2>}",
+		"\t\t</div>",
+		"\t</div>",
+		"</section>"
+	],
+	"description": "Bulma Regular Hero"
+},
+"Bulma Full Height Hero": {
+	"prefix": "bulma-hero-full",
+	"body": [
+		"<section class=\"hero is-${1:primary} is-fullheight\">"
 			"\t<div class=\"hero-body\">"
 			"\t\t<div class=\"container\">"
 			"\t\t\t<h1 class=\"title\">"
@@ -95,29 +88,38 @@
 			"\t\t</div>"
 			"\t</div>"
 			"</section>"
-		],
-		"description": "A Bulma hero, full height"
-	},
-
-	"Bulma Box": {
-		"prefix": "bulma-box",
-		"body": [
-			"<div class=\"box\">",
-			"\t$1",
-			"</div>"
-		],
-		"description": "A Bulma Box"
-	},
-	"Bulma Text Input": {
-		"prefix": "bulma-text",
-		"body": [
-			"<div class=\"field\">"
+	],
+	"description": "A Bulma hero, full height"
+},
+"Bulma Box": {
+	"prefix": "bulma-box",
+	"body": [
+		"<div class=\"box\">",
+		"\t$1",
+		"</div>"
+	],
+	"description": "A Bulma Box"
+},
+"Bulma Text Input": {
+	"prefix": "bulma-text",
+	"body": [
+		"<div class=\"field\">"
 			"\t<label class=\"label\">${1:Name}</label>"
 			"\t<div class=\"control\">"
 			"\t\t<input class=\"input\" name=\"${2:name}\" type=\"text\" placeholder=\"${3:Text input}\">"
 			"\t</div>"
 			"</div>"
-		],
-		"description": "description"
-	},
+	],
+	"description": "description"
+},
+"JQuery": {
+	"prefix": "jquery",
+	"body": "<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=\" crossorigin=\"anonymous\"></script>",
+	"description": "JQuery CDN"
+},
+"Vue CDN": {
+	"prefix": "vue-cdn",
+	"body": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js\"></script>",
+	"description": "CDN for Vue.js"
+}
 }

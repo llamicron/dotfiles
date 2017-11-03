@@ -1,87 +1,9 @@
 [
 	{
-		"name": "faker",
-		"rootPath": "$home/code/ruby/faker",
-		"group": "ruby"
-	},
-	{
-		"name": "adaptibrew",
-		"rootPath": "/Volumes/pi/llamicron-adaptibrew",
-		"group": "python"
-	},
-	{
-		"name": "genetics",
-		"rootPath": "$home/code/ruby/genetics",
-		"group": "ruby"
-	},
-	{
-		"name": "brewer",
-		"rootPath": "/Volumes/pi/brewer",
-		"group": "ruby"
-	},
-	{
-		"name": "crystal lang",
-		"rootPath": "$home/code/crystal/crystal-lang",
-		"group": "crystal"
-	},
-	{
-		"name": "md_link_generator",
-		"rootPath": "$home/code/CRUD/md_link_generator",
-		"group": "crystal"
-	},
-	{
-		"name": "servers",
-		"rootPath": "$home/code/CRUD/servers",
-		"paths": [],
-		"group": "crystal"
-	},
-	{
-		"name": "create repo",
-		"rootPath": "$home/code/CRUD/create_repo",
-		"paths": [],
-		"group": "crystal"
-	},
-	{
-		"name": "dotfiles",
-		"rootPath": "$home/dotfiles",
-		"paths": [],
-		"group": "system"
-	},
-	{
-		"name": "push dotfiles",
-		"rootPath": "$home/code/CRUD/push_dotfiles",
-		"paths": [],
-		"group": "ruby"
-	},
-	{
-		"name": "learn you a haskell",
-		"rootPath": "$home/code/haskell/learn_you_a_haskell",
-		"paths": [],
-		"group": "haskell"
-	},
-	{
-		"name": "CRUD",
-		"rootPath": "$home/code/CRUD",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "learn js",
-		"rootPath": "$home/code/js/learn",
-		"paths": [],
-		"group": "js"
-	},
-	{
 		"name": "sandbox",
 		"rootPath": "$home/code/sandbox",
 		"paths": [],
 		"group": ""
-	},
-	{
-		"name": "learn python",
-		"rootPath": "$home/code/python/learn",
-		"paths": [],
-		"group": "python"
 	},
 	{
 		"name": "HackerRank",
@@ -96,15 +18,33 @@
 		"group": "js"
 	},
 	{
-		"name": "brewer_network",
-		"rootPath": "$home/code/python/brewer_network",
+		"name": "brewer",
+		"rootPath": "/Volumes/pi/brewer",
 		"paths": [],
 		"group": "python"
 	},
 	{
-		"name": "smooth scroll bug",
-		"rootPath": "$home/code/js/smooth-scroll-bug",
+		"name": "weber",
+		"rootPath": "Volumes/pi/weber",
 		"paths": [],
-		"group": "js"
+		"group": "python"
+	},
+	{
+		"name": "i",
+		"rootPath": "$home/code/python/i",
+		"paths": [],
+		"group": "python"
+	},
+	{
+		"name": "colors",
+		"rootPath": "$home/code/automation/colors",
+		"paths": [],
+		"group": "automation"
+	},
+	{
+		"name": "save_a_table",
+		"rootPath": "$home/code/tables",
+		"paths": [],
+		"group": ""
 	}
 ]

@@ -23,5 +23,13 @@
 			"if __name__ == '__main__':",
 			"\tmain()"
 		]
+	},
+	"__init__":{
+		"prefix": "init",
+		"body": [
+			"def __init__(self, $1):",
+			"\t${2:self.$1 = $1}"
+		],
+		"description": "description"
 	}
 }

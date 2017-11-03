@@ -7,7 +7,7 @@ export ZSH=/Users/llamicron/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="refined"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,6 +83,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias save_a_table_ec2="ssh -i \"save_a_table.pem\" ubuntu@ec2-54-200-137-241.us-west-2.compute.amazonaws.com"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 

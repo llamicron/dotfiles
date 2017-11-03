@@ -1,16 +1,14 @@
 {
     // Font
     "editor.fontFamily": "Fira code",
-    "editor.fontSize": 18,
-    "editor.lineHeight": 40,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 35,
     // Theme and Appearance
     "workbench.colorTheme": "Seti",
     "window.zoomLevel": 0,
     "editor.roundedSelection": true,
-    "editor.rulers": [
-        60
-    ],
     "editor.cursorBlinking": "expand",
+    "workbench.fontAliasing": "antialiased",
     "editor.lineNumbers": "on",
     "editor.wordWrap": "off",
     "editor.fontLigatures": true,
@@ -29,7 +27,8 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/.vscode": true,
-        "**/*.pyc": true
+        "**/*.pyc": true,
+        ".cache": true
     },
     // Behavior
     "editor.formatOnPaste": true,
@@ -54,14 +53,18 @@
     // Workbench
     "workbench.tips.enabled": false,
     "workbench.editor.enablePreview": false,
+    // "workbench.iconTheme": "material-icon-theme",
     "workbench.iconTheme": "material-icon-theme",
     // File Explorer
     "explorer.openEditors.visible": 0,
+    "explorer.sortOrder": "type",
     // Search
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
-        "**/.shards": true
+        "**/.shards": true,
+        "*.db": true,
+        "**/*cache": true
     },
     // Getting around Microsoft's bullshit
     "telemetry.enableTelemetry": false,
@@ -87,5 +90,11 @@
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     // Python
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+
+
+    // Misc
+    "workbench.startupEditor": "none",
+    "material-icon-theme.showUpdateMessage": false,
+    "vsicons.dontShowNewVersionMessage": true
 }

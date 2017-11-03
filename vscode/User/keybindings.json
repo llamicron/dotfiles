@@ -51,5 +51,9 @@
         "key": "cmd+k",
         "command": "workbench.action.terminal.clear",
         "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-editor.action.joinLines"
     }
 ]
