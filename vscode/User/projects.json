@@ -46,5 +46,11 @@
 		"rootPath": "$home/code/tables",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "llamicron.github.io",
+		"rootPath": "$home/code/html/llamicron.github.io",
+		"paths": [],
+		"group": ""
 	}
 ]

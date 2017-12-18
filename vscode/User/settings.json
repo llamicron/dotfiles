@@ -4,7 +4,7 @@
     "editor.fontSize": 16,
     "editor.lineHeight": 35,
     // Theme and Appearance
-    "workbench.colorTheme": "Seti",
+    "workbench.colorTheme": "Mirage (High-contrast)",
     "window.zoomLevel": 0,
     "editor.roundedSelection": true,
     "editor.cursorBlinking": "expand",
@@ -37,7 +37,7 @@
     // Terminal
     "terminal.external.osxExec": "Iterm2",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontLigatures": true,
+    // "terminal.integrated.fontLigatures": true,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.lineHeight": 1.2,
     "terminal.integrated.cursorStyle": "line",
@@ -46,14 +46,14 @@
     "editor.detectIndentation": true,
     // Status Bar Color (purple all the time)
     "workbench.colorCustomizations": {
-        "statusBar.background": "#68217A",
-        "statusBar.noFolderBackground": "#68217A",
+        // "statusBar.background": "#68217A",
+        "statusBar.background": "#EFF1F3",
+        "statusBar.noFolderBackground": "#EFF1F3",
         "statusBar.debuggingBackground": "#68217A"
     },
     // Workbench
     "workbench.tips.enabled": false,
     "workbench.editor.enablePreview": false,
-    // "workbench.iconTheme": "material-icon-theme",
     "workbench.iconTheme": "material-icon-theme",
     // File Explorer
     "explorer.openEditors.visible": 0,
@@ -64,7 +64,8 @@
         "**/bower_components": true,
         "**/.shards": true,
         "*.db": true,
-        "**/*cache": true
+        "**/*cache": true,
+        "**/*__pycache__": true
     },
     // Getting around Microsoft's bullshit
     "telemetry.enableTelemetry": false,
@@ -96,5 +97,12 @@
     // Misc
     "workbench.startupEditor": "none",
     "material-icon-theme.showUpdateMessage": false,
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.panel.location": "bottom",
+    "explorer.confirmDragAndDrop": false,
+    "python.linting.enabledWithoutWorkspace": false,
+    "extensions.ignoreRecommendations": false,
+    "workbench.activityBar.visible": true,
+    "editor.snippetSuggestions": "top",
+    "git.confirmSync": false
 }
