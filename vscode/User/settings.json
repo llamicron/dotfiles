@@ -1,10 +1,10 @@
 {
     // Font
     "editor.fontFamily": "Fira code",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.lineHeight": 35,
     // Theme and Appearance
-    "workbench.colorTheme": "Mirage (High-contrast)",
+    "workbench.colorTheme": "DuoTone Dark Sea",
     "window.zoomLevel": 0,
     "editor.roundedSelection": true,
     "editor.cursorBlinking": "expand",
@@ -28,7 +28,10 @@
         "**/.DS_Store": true,
         "**/.vscode": true,
         "**/*.pyc": true,
-        ".cache": true
+        ".cache": true,
+        "**/__pycache__": true,
+        "Cargo.lock": true,
+        ".ropeproject": true
     },
     // Behavior
     "editor.formatOnPaste": true,
@@ -39,22 +42,23 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     // "terminal.integrated.fontLigatures": true,
     "terminal.integrated.fontSize": 16,
-    "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.lineHeight": 1.6,
     "terminal.integrated.cursorStyle": "line",
     // Tabs
     "editor.tabSize": 2,
     "editor.detectIndentation": true,
     // Status Bar Color (purple all the time)
     "workbench.colorCustomizations": {
+        // Purple
         // "statusBar.background": "#68217A",
-        "statusBar.background": "#EFF1F3",
+        // Green
+        "statusBar.background": "#00aa66e0",
         "statusBar.noFolderBackground": "#EFF1F3",
         "statusBar.debuggingBackground": "#68217A"
     },
     // Workbench
     "workbench.tips.enabled": false,
     "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "material-icon-theme",
     // File Explorer
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "type",
@@ -82,27 +86,45 @@
     // "workbench.welcome.enabled": false,
     "workbench.statusBar.visible": true,
     // Extensions
-    // Project Manager
-    "projectManager.sortList": "Path",
     // Journal
-    "journal.base": "/Users/llamicron/.journal/",
-    "journal.tpl-task": "* [ ] TASK: {content}",
     "git.enableSmartCommit": true,
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     // Python
     "python.linting.enabled": false,
-
-
     // Misc
     "workbench.startupEditor": "none",
-    "material-icon-theme.showUpdateMessage": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "workbench.panel.location": "bottom",
     "explorer.confirmDragAndDrop": false,
-    "python.linting.enabledWithoutWorkspace": false,
     "extensions.ignoreRecommendations": false,
     "workbench.activityBar.visible": true,
     "editor.snippetSuggestions": "top",
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "licenseheader.Author": "llamicron",
+    "licenseheader.CopiedBy": "Copyright (c) 2018 llamicron",
+
+    // Macros
+    "macros": {
+        "CommentDown": [
+            "editor.action.copyLinesDownAction",
+            "cursorUp",
+            "editor.action.addCommentLine",
+            "cursorDown"
+        ]
+    },
+    "python.linting.lintOnSave": true,
+    "vsnotes.defaultNotePath": "/Users/llamicron/code/notes/",
+    "vsnotes.defaultNoteTitle": "{title}.{ext}",
+    "workbench.iconTheme": "vscode-icons",
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-apple-darwin",
+        "nightlyToolchain": "nightly-x86_64-apple-darwin"
+    },
+    "rust.mode": "rls",
+
+    "[rust]": {
+        "editor.tabSize": 4
+    },
+    "workbench.statusBar.feedback.visible": false,
+    "files.autoSave": "off",
 }

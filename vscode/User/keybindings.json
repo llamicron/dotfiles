@@ -87,5 +87,29 @@
         "key": "cmd+c",
         "command": "-editor.action.clipboardCopyAction",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "alt+cmd+/",
+        "command": "macros.CommentDown"
+    },
+    {
+        "key": "shift+alt+cmd+p",
+        "command": "python.startREPL"
+    },
+    {
+        "key": "shift+alt+cmd+e",
+        "command": "python.refactorExtractVariable"
     }
 ]

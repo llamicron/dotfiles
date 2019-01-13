@@ -24,12 +24,20 @@
 			"\tmain()"
 		]
 	},
-	"__init__":{
+	"__init__": {
 		"prefix": "init",
 		"body": [
 			"def __init__(self, $1):",
 			"\t${2:self.$1 = $1}"
 		],
-		"description": "description"
+		"description": "Standard __init__ method"
+	},
+	"Unit Test": {
+		"prefix": "test",
+		"body": [
+			"def test_$1(self):",
+			"\t$2"
+		],
+		"description": "A standard unit test for 'unittest'"
 	}
 }

@@ -1,56 +1,14 @@
 [
 	{
-		"name": "sandbox",
-		"rootPath": "$home/code/sandbox",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "HackerRank",
-		"rootPath": "$home/code/HR",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "vue",
-		"rootPath": "$home/code/js/vue",
-		"paths": [],
-		"group": "js"
-	},
-	{
 		"name": "brewer",
-		"rootPath": "/Volumes/pi/brewer",
+		"rootPath": "/Users/llamicron/code/python/brewer",
 		"paths": [],
 		"group": "python"
 	},
 	{
 		"name": "weber",
-		"rootPath": "Volumes/pi/weber",
+		"rootPath": "/Users/llamicron/code/python/weber",
 		"paths": [],
 		"group": "python"
-	},
-	{
-		"name": "i",
-		"rootPath": "$home/code/python/i",
-		"paths": [],
-		"group": "python"
-	},
-	{
-		"name": "colors",
-		"rootPath": "$home/code/automation/colors",
-		"paths": [],
-		"group": "automation"
-	},
-	{
-		"name": "save_a_table",
-		"rootPath": "$home/code/tables",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "llamicron.github.io",
-		"rootPath": "$home/code/html/llamicron.github.io",
-		"paths": [],
-		"group": ""
 	}
 ]

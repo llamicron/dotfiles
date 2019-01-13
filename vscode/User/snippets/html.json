@@ -14,69 +14,77 @@
 		"description": "Log output to console"
 	}
 */
-"Bootstrap CDN": {
-	"prefix": "bootstrap",
-	"body": [
-		"<!-- Latest compiled and minified CSS -->",
-		"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">",
-		"<!-- jQuery library -->",
-		"<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>",
-		"<!-- Latest compiled JavaScript -->",
-		"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>",
-		"$1"
-	]
-},
-"Font Awesome CDN": {
-	"prefix": "fa",
-	"body": "<script src=\"https: //use.fontawesome.com/cc35b7b927.js\"></script>",
-	"description": "Font Awesome CDN link"
-},
-"Raleway Font": {
-	"prefix": "raleway",
-	"body": "<link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">",
-	"description": "Link to the Raleway Google Font"
-},
-"Jinja Tag": {
-	"prefix": "{%",
-	"body": "{% $1 %",
-	"description": "Jinja python tag"
-},
-"Jinja If": {
-	"prefix": "if",
-	"body": [
-		"{% if $1 %}",
-		"\t$2",
-		"{% endif %}"
-	]
-}
-// Bulma CSS
-"Bulma CSS": {
-	"prefix": "bulma",
-	"body": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css\">",
-	"description": "Bulma CSS CDN link"
-},
-"Bulma Hero": {
-	"prefix": "bulma-hero",
-	"body": [
-		"<section class=\"hero is-${1:primary}\">",
-		"\t<div class=\"hero-body\">",
-		"\t\t<div class=\"container\">",
-		"\t\t\t<h1 class=\"title\">",
-		"\t\t\t\t${2:Primary title}",
-		"\t\t\t</h1>",
-		"\t\t\t${3:<h2 class=\"subtitle\">",
-		"\t\t\t\t${4:Primary subtitle}",
-		"\t\t\t</h2>}",
-		"\t\t</div>",
-		"\t</div>",
-		"</section>"
-	],
-	"description": "Bulma Regular Hero"
-},
-"Bulma Full Height Hero": {
-	"prefix": "bulma-hero-full",
-	"body": [
-		"<section class=\"hero is-${1:primary} is-fullheight\">"
+	"Bootstrap CDN": {
+		"prefix": "bootstrap",
+		"body": [
+			"<!-- Latest compiled and minified CSS -->",
+			"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">",
+			"<!-- jQuery library -->",
+			"<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>",
+			"<!-- Latest compiled JavaScript -->",
+			"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>",
+			"$1"
+		]
+	},
+	"Font Awesome CDN": {
+		"prefix": "fa",
+		"body": "<script src=\"https: //use.fontawesome.com/cc35b7b927.js\"></script>",
+		"description": "Font Awesome CDN link"
+	},
+	"Raleway Font": {
+		"prefix": "raleway",
+		"body": "<link href=\"https://fonts.googleapis.com/css?family=Raleway\" rel=\"stylesheet\">",
+		"description": "Link to the Raleway Google Font"
+	},
+	"Jinja Tag": {
+		"prefix": "{%",
+		"body": "{% $1 %",
+		"description": "Jinja python tag"
+	},
+	"Jinja If": {
+		"prefix": "if",
+		"body": [
+			"{% if $1 %}",
+			"\t$2",
+			"{% endif %}"
+		]
+	},
+	"Flask URL For Script Link": {
+		"prefix": "url_for",
+		"body": [
+			"<script src=\"(( url_for('static', filename='${1:main}.js') ))\"></script>",
+			"$2"
+		],
+		"description": "Script link with Flask's `url_for` method"
+	},
+	// Bulma CSS
+	"Bulma CSS": {
+		"prefix": "bulma",
+		"body": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css\">",
+		"description": "Bulma CSS CDN link"
+	},
+	"Bulma Hero": {
+		"prefix": "bulma-hero",
+		"body": [
+			"<section class=\"hero is-${1:primary}\">",
+			"\t<div class=\"hero-body\">",
+			"\t\t<div class=\"container\">",
+			"\t\t\t<h1 class=\"title\">",
+			"\t\t\t\t${2:Primary title}",
+			"\t\t\t</h1>",
+			"\t\t\t${3:<h2 class=\"subtitle\">",
+			"\t\t\t\t${4:Primary subtitle}",
+			"\t\t\t</h2>}",
+			"\t\t</div>",
+			"\t</div>",
+			"</section>"
+		],
+		"description": "Bulma Regular Hero"
+	},
+	"Bulma Full Height Hero": {
+		"prefix": "bulma-hero-full",
+		"body": [
+			"<section class=\"hero is-${1:primary} is-fullheight\">"
 			"\t<div class=\"hero-body\">"
 			"\t\t<div class=\"container\">"
 			"\t\t\t<h1 class=\"title\">"
@@ -88,38 +96,80 @@
 			"\t\t</div>"
 			"\t</div>"
 			"</section>"
-	],
-	"description": "A Bulma hero, full height"
-},
-"Bulma Box": {
-	"prefix": "bulma-box",
-	"body": [
-		"<div class=\"box\">",
-		"\t$1",
-		"</div>"
-	],
-	"description": "A Bulma Box"
-},
-"Bulma Text Input": {
-	"prefix": "bulma-text",
-	"body": [
-		"<div class=\"field\">"
+		],
+		"description": "A Bulma hero, full height"
+	},
+	"Bulma Box": {
+		"prefix": "bulma-box",
+		"body": [
+			"<div class=\"box\">",
+			"\t$1",
+			"</div>"
+		],
+		"description": "A Bulma Box"
+	},
+	"Bulma Text Input": {
+		"prefix": "bulma-text",
+		"body": [
+			"<div class=\"field\">"
 			"\t<label class=\"label\">${1:Name}</label>"
 			"\t<div class=\"control\">"
 			"\t\t<input class=\"input\" name=\"${2:name}\" type=\"text\" placeholder=\"${3:Text input}\">"
 			"\t</div>"
 			"</div>"
-	],
-	"description": "description"
-},
-"JQuery": {
-	"prefix": "jquery",
-	"body": "<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=\" crossorigin=\"anonymous\"></script>",
-	"description": "JQuery CDN"
-},
-"Vue CDN": {
-	"prefix": "vue-cdn",
-	"body": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js\"></script>",
-	"description": "CDN for Vue.js"
-}
+		],
+		"description": "description"
+	},
+	"JQuery": {
+		"prefix": "jquery",
+		"body": "<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=\" crossorigin=\"anonymous\"></script>",
+		"description": "JQuery CDN"
+	},
+	"Vue CDN": {
+		"prefix": "vue-cdn",
+		"body": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js\"></script>",
+		"description": "CDN for Vue.js"
+	},
+	// Semantic UI
+	"Semantic UI CDN": {
+		"body": [
+			"<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css\">",
+			"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.js\"></script>"
+		],
+		"prefix": "semantic-cdn",
+		"description": "CDN for semantic UI"
+	},
+
+	// MDL
+	"MDL Ripple FAB Button": {
+		"prefix": "mdl-fab",
+		"body": [
+			"<button class=\"mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored\">",
+			"${1:\t<i class=\"material-icons\">add</i>}",
+			"</button>"
+		],
+		"description": "A circular FAB button with ripple"
+	},
+
+	"MDL Button": {
+		"prefix": "mdl-button",
+		"body": [
+			"<button class=\"mdl-button mdl-js-button ${1:mdl-button--colored} mdl-js-ripple-effect\">",
+			"\t${2:Button}",
+			"</button>"
+		],
+		"description": "A description"
+	},
+
+	"MDL Text Field": {
+		"prefix": "mdl-text",
+		"body": [
+			"<div class=\"mdl-textfield mdl-js-textfield mdl-textfield--floating-label\">",
+			"\t<input class=\"mdl-textfield__input\"${1: pattern=\"-?[0-9]*(\\.[0-9]+)?\"} type=\"text\" id=\"${3:sample1}\">",
+			"\t<label class=\"mdl-textfield__label\" for=\"${3:sample1}\">${4:Text...}</label>",
+			"\t${2:<span class=\"mdl-textfield__error\">Needs to be a number</span>}",
+			"</div>"
+		],
+		"description": "A description"
+	},
 }
