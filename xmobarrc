@@ -1,1 +1,23 @@
-/home/llamicron/.xmobarrc
+-- Configuration for xmobar
+-- This is stolen from the beginners guide to xmonad
+-- https://beginners-guide-to-xmonad.readthedocs.io/configure_xmobar.html
+Config { font = "xft:Bitstream Fira Code:size=9:bold:antialias=true";
+        , border = TopB
+        , bgColor = "black"
+        , fgColor = "grey"
+        , position = TopW L 100
+        , commands = [ Run Weather "KDFW" ["-t","<tempF>F","-L","35","-H","90","--normal","#a7c080","--high","red","--low","lightblue"] 36000
+                        -- , Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
+                        -- , Run Network "eth1" ["-L","0","-H","32","--normal","green","--high","red"] 10
+                        -- , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+                        -- , Run Memory ["-t","Mem: <usedratio>%"] 10
+                        -- , Run Swap [] 10
+                        -- , Run Com "hostname" ["-s","-r"] "" 36000
+                        , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                        , Run StdinReader
+                        ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        -- , template = "%StdinReader% | %cpu% | %memory% * %swap% | %eth0% - %eth1% }{<fc=#ee9a00>%date%</fc> | %uname% | %KDFW% "
+        , template = "<fc=#a7c080>%StdinReader%</fc> | %KDFW% }{<fc=#a7c080>%date%</fc> | nero   "
+        }
