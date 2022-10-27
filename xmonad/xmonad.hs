@@ -19,6 +19,9 @@ import XMonad.Layout.IM
 myBrowser :: String
 myBrowser = "firefox"
 
+myMusic :: String
+myMusic = "spotify"
+
 -- Startup
 main :: IO ()
 main = do 
@@ -43,8 +46,14 @@ homeMask =  133 -- from the xev data
 -- Custom keyboard shortcuts
 keysToAdd x =
     [ ((mod4Mask, xK_F4 ), kill)
-    , ((mod4Mask, xK_f), spawn myBrowser)
     , ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
+    -- Programs
+    , ((mod4Mask, xK_f), spawn myBrowser)
+    , ((mod4Mask, xK_s), spawn myMusic)
+    , ((mod4Mask, xK_d), spawn "discord")
+    , ((mod4Mask, xK_a), spawn "firefox --new-window https://app.asana.com/")
+    , ((mod4Mask, xK_g), spawn "firefox --new-tab https://github.com/")
+    -- Volume Controls
     , ((mod4Mask .|. shiftMask, xK_comma), spawn "amixer -D pulse sset Master 10%-")
     , ((mod4Mask .|. shiftMask, xK_period), spawn "amixer -D pulse sset Master 10%+")
     , ((mod4Mask .|. shiftMask, xK_m), spawn "amixer -D pulse sset Master toggle")
@@ -62,6 +71,6 @@ myKeys x = foldr M.delete (keysToAdd' x) (keysToDel x)
     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
 
 -- |Workspaces listing
-myWorkspaces = ["1:work", "2:edit", "3:web", "4:coms", "5:music"]
+myWorkspaces = ["1:work", "2:web", "3:org", "4:coms", "5:music"]
 
 myLayouts = spacing 25 $ Tall 1 (3/100) (1/2) ||| Full

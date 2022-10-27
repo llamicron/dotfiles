@@ -1,8 +1,8 @@
-Config { font = "xft:Bitstream Fira Code:size=9:bold:antialias=true"
-        , border = TopB
-        , bgColor = "black"
-        , fgColor = "grey"
+Config { font = "xft:Bitstream Fira Code:size=10:bold:antialias=true"
+        , bgColor = "#2b3339"
+        , fgColor = "#d3c6aa"
         , position = TopW L 100
+        , allDesktops = True
         , commands = [ Run Weather "KDFW" ["-t","<tempF>F","-L","35","-H","90","--normal","#a7c080","--high","red","--low","lightblue"] 36000
                         -- , Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
                         -- , Run Network "eth1" ["-L","0","-H","32","--normal","green","--high","red"] 10
@@ -15,6 +15,5 @@ Config { font = "xft:Bitstream Fira Code:size=9:bold:antialias=true"
                         ]
         , sepChar = "%"
         , alignSep = "}{"
-        -- , template = "%StdinReader% | %cpu% | %memory% * %swap% | %eth0% - %eth1% }{<fc=#ee9a00>%date%</fc> | %uname% | %KDFW% "
-        , template = "<fc=#a7c080>%StdinReader%</fc> | %KDFW% }{<fc=#a7c080>%date%</fc> | nero   "
+        , template = "<fc=#a7c080>%StdinReader%</fc> }  { %KDFW% | <fc=#a7c080>%date%</fc> | nero   "
         }

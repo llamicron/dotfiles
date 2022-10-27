@@ -3,10 +3,6 @@
 # Load Resources
 xrdb -merge .Xresources
 
-# Set up an icon tray
-stalonetray &
-
-
 # Start udiskie for external media
 udiskie &
 
