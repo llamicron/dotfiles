@@ -103,3 +103,5 @@ alias ls="tree -L 1"
 
 
 export PATH=$PATH:/home/llamicron/.spicetify
+
+[ -f "/home/llamicron/.ghcup/env" ] && source "/home/llamicron/.ghcup/env" # ghcup-env

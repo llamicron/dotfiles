@@ -1,7 +1,4 @@
--- Configuration for xmobar
--- This is stolen from the beginners guide to xmonad
--- https://beginners-guide-to-xmonad.readthedocs.io/configure_xmobar.html
-Config { font = "xft:Bitstream Fira Code:size=9:bold:antialias=true";
+Config { font = "xft:Bitstream Fira Code:size=9:bold:antialias=true"
         , border = TopB
         , bgColor = "black"
         , fgColor = "grey"
