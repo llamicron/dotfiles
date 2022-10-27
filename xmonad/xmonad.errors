@@ -1,0 +1,31 @@
+
+xmonad.hs:23:13: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+23 | myLayouts = spacing 25 $ Tall 1 (3/100) (1/2) ||| Full
+   |             ^^^^^^^
+
+xmonad.hs:28:14: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+28 |     xmonad $ defaultConfig
+   |              ^^^^^^^^^^^^^
+
+xmonad.hs:29:51: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+29 |         { manageHook = manageDocks <+> manageHook defaultConfig
+   |                                                   ^^^^^^^^^^^^^
+
+xmonad.hs:32:45: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+32 |         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
+   |                                             ^^^^^^^^^^^^^

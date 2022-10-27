@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Load Resources
+xrdb -merge .Xresources
+
+# Set up an icon tray
+stalonetray &
+
+
+# Start udiskie for external media
+udiskie &
+
+# Configure monitor layout with arandr
+~/.screenlayout/main.sh
+
+# Set wallpaper
+feh --bg-scale /home/llamicron/usr/img/backgrounds/flowers-min.png
+
+# Set default terminal to alacritty
+terminal = "~/.cargo/bin/alacritty"
+
+# Fire up apps
+xscreensaver -no-splash &
+if [ -x /usr/bin/nm-applet ]; then
+	nm-applet --sm-disable &
+fu
+
+exec xmonad
