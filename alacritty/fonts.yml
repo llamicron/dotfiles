@@ -1,0 +1,22 @@
+# This file is the configuration file for alacritty
+# See alacritty_full.yml for all configuration options
+
+# Font configuration
+font:
+  normal:
+    family: "Fira Code"
+    style: Medium
+  # Point size
+  size: 10.0
+
+  # Offset
+  offset:
+    x: 0
+    y: 10
+
+# Shell Configuration
+shell:
+  program: /usr/bin/zsh
+
+# Open new terminals in this directory
+working_directory: /home/llamicron
