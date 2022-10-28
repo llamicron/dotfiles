@@ -53,6 +53,7 @@ keysToAdd x =
     , ((mod4Mask, xK_d), spawn "discord")
     , ((mod4Mask, xK_a), spawn "firefox --new-window https://app.asana.com/")
     , ((mod4Mask, xK_g), spawn "firefox --new-tab https://github.com/")
+    , ((mod4Mask .|. shiftMask, xK_f), spawn "nautilus")
     -- Volume Controls
     , ((mod4Mask .|. shiftMask, xK_comma), spawn "amixer -D pulse sset Master 10%-")
     , ((mod4Mask .|. shiftMask, xK_period), spawn "amixer -D pulse sset Master 10%+")
@@ -71,6 +72,6 @@ myKeys x = foldr M.delete (keysToAdd' x) (keysToDel x)
     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
 
 -- |Workspaces listing
-myWorkspaces = ["1:work", "2:web", "3:org", "4:coms", "5:music"]
+myWorkspaces = ["1:dev", "2:ref", "3:org", "4:coms", "5:music", "6", "7", "8", "9", "10"]
 
 myLayouts = spacing 25 $ Tall 1 (3/100) (1/2) ||| Full

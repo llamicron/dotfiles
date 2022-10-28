@@ -15,5 +15,5 @@ Config { font = "xft:Bitstream Fira Code:size=10:bold:antialias=true"
                         ]
         , sepChar = "%"
         , alignSep = "}{"
-        , template = "<fc=#a7c080>%StdinReader%</fc> }  { %KDFW% | <fc=#a7c080>%date%</fc> | nero   "
+        , template = "<fc=#a7c080>%StdinReader%</fc> } make no small plans { %KDFW% | <fc=#a7c080>%date%</fc> | nero   "
         }
