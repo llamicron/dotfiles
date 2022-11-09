@@ -22,6 +22,9 @@ myBrowser = "firefox"
 myMusic :: String
 myMusic = "spotify"
 
+myFileManager :: String
+myFileManager = "nautilus"
+
 -- Startup
 main :: IO ()
 main = do 
@@ -53,7 +56,9 @@ keysToAdd x =
     , ((mod4Mask, xK_d), spawn "discord")
     , ((mod4Mask, xK_a), spawn "firefox --new-window https://app.asana.com/")
     , ((mod4Mask, xK_g), spawn "firefox --new-tab https://github.com/")
-    , ((mod4Mask .|. shiftMask, xK_f), spawn "nautilus")
+    , ((mod4Mask, xK_x), spawn "obsidian")
+    , ((mod4Mask .|. shiftMask, xK_x), spawn "push_notes.sh")
+    , ((mod4Mask .|. shiftMask, xK_f), spawn myFileManager)
     -- Volume Controls
     , ((mod4Mask .|. shiftMask, xK_comma), spawn "amixer -D pulse sset Master 10%-")
     , ((mod4Mask .|. shiftMask, xK_period), spawn "amixer -D pulse sset Master 10%+")
@@ -62,7 +67,8 @@ keysToAdd x =
     ++
     [((m .|. homeMask, k), windows $ f i) 
        | (i, k) <- zip (XMonad.workspaces defaultConfig) [10 .. 19]
-       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)] ]
+       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
+       ]
 
 keysToDel x = [] -- to delete the unused keys
 
