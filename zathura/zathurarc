@@ -1,0 +1,5 @@
+set font "Fira Code normal 12"
+@REM set default-bg "#2b3339"
+@REM set default-fg "#d3c6aa"
+set recolor true
+include everforest

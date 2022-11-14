@@ -38,7 +38,7 @@ myConf = defaultConfig
    , layoutHook = smartBorders $ myLayouts
    , workspaces = myWorkspaces
    , borderWidth = 2
-   , focusedBorderColor = "#7fbbb3"
+   , focusedBorderColor = "#d699b6"
    , keys = myKeys
    }
 
@@ -78,6 +78,6 @@ myKeys x = foldr M.delete (keysToAdd' x) (keysToDel x)
     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
 
 -- |Workspaces listing
-myWorkspaces = ["1:dev", "2:ref", "3:org", "4:coms", "5:music", "6", "7", "8", "9", "10"]
+myWorkspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 myLayouts = spacing 25 $ Tall 1 (3/100) (1/2) ||| Full
