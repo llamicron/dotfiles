@@ -29,7 +29,7 @@
 % For the header bar
 \usepackage{fancyhdr}
 % For coordinate system
-% Uncomment if you need this, it's big i think
+% Uncomment if you need this, its big i think
 % \usepackage{tkz-euclide}
 % This package is used for drawing node graphs
 % Uncomment if you need it. See the guide here:

@@ -91,6 +91,7 @@ alias l2="tree -L 2"
 # This will restart pulseaudio. I have an issue where when my 
 # processor is under load (i think) then it fucks the audio
 alias fix_audio="pulseaudio -k"
+alias luketex="latexmk -pdf -"
 
 
 # Add Spicetify to path
