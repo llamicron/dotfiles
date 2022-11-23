@@ -34,3 +34,12 @@
   columns=fixed                    % Using fixed column width (for e.g. nice alignment)
 }
 
+% See more styles here
+% https://pygments.org/styles/
+\usemintedstyle{lovelace}
+
+
+\setminted{linenos=true}
+\setminted{autogobble=true}
+\setminted{frame=leftline}
+\setminted{mathescape=true}

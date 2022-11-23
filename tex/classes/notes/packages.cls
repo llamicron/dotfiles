@@ -2,8 +2,7 @@
 \usepackage{listings}
 
 % For code listings
-% \usepackage[section]{minted}
-
+\usepackage[section]{minted}
 % For the courier font
 \usepackage{courier}
 % not sure what i use these for honestly, too lazy to figure out

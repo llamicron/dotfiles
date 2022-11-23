@@ -21,6 +21,7 @@
 % Page size
 \class{notes/page_size.cls}
 % Code listing styles
+% We actually don't need this anymore because I switched to minted for code listings
 \class{notes/code_listings.cls}
 % Provides elements like \hr
 \class{notes/elements.cls}
