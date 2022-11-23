@@ -3,7 +3,7 @@
 # This script copies one of Luke's custom .tex files as a template into the working directory and opens it
 # It's just a shortcut to get things up and running quickly
 
-NT_TEMPLATE_DIR="/home/llamicron/usr/tex/templates/"
+NT_TEMPLATE_DIR="/home/llamicron/etc/tex/templates/"
 
 echo "Creating a .tex template"
 tree -L 1 $NT_TEMPLATE_DIR | grep .tex
