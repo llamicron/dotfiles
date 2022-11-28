@@ -10,7 +10,7 @@ udiskie &
 ~/.screenlayout/main.sh
 
 # Set wallpaper
-feh --bg-scale /home/llamicron/usr/img/backgrounds/flowers-min.png
+feh --bg-scale /home/llamicron/usr/img/backgrounds/irl/forest.jpg
 
 # Set default terminal to alacritty
 terminal = "~/.cargo/bin/alacritty"
