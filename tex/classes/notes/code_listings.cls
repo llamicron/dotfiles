@@ -34,10 +34,13 @@
   columns=fixed                    % Using fixed column width (for e.g. nice alignment)
 }
 
+% Minted configuration
+
+% Start a code listing with \begin{minted}{Language}
+
 % See more styles here
 % https://pygments.org/styles/
 \usemintedstyle{lovelace}
-
 
 \setminted{linenos=true}
 \setminted{autogobble=true}
