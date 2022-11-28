@@ -10,6 +10,8 @@ Use `latexmk` to compile, open, and watch `.tex` files.
 $ latexmk -pvc [your_file].tex
 ```
 
+Note that some packages (`minted`, etc.) need the `-shell-escape` flag passed when running `latexmk`
+
 ## Automatically copy template
 
 I wrote a script to do the work for you

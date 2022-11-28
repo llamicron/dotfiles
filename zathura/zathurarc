@@ -1,5 +1,25 @@
 set font "Fira Code normal 12"
-@REM set default-bg "#2b3339"
-@REM set default-fg "#d3c6aa"
+
+# Things to remember:
+# a - fit to height
+# s - fit to width
+# q - quit
+# ctrl+r - switch recolor
+
+# see more in the keyboard shortcuts section below
+
+# Start with the theme
 set recolor true
+
+# Enable copying to clipboard
+set selection-clipboard clipboard
+
+# This keeps images regular when inverting the colors
+set recolor-reverse-video "true"
+
+# Keyboard shortcuts
+map D set "first-page-column 1:1"
+map i toggle_statusbar
+
+# Import the dark theme
 include everforest

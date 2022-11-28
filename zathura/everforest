@@ -1,10 +1,11 @@
+# Background color outside the document
 set default-bg                  "#2b3339"
 set default-fg                  "#d3c6aa"
 
-set statusbar-fg                "#d3c6aa"
 set statusbar-bg                "#2b3339"
+set statusbar-fg                "#d3c6aa"
 
-set inputbar-bg                 "#2b3339"
+set inputbar-bg                 "#323d43"
 set inputbar-fg                 "#d3c6aa"
 
 set notification-bg             "#2b3339"
@@ -25,6 +26,6 @@ set completion-fg               "#d3c6aa"
 set completion-highlight-fg     "#2b3339"
 set completion-highlight-bg     "#2b3339"
 
+# Background color of the page
 set recolor-lightcolor          "#2b3339"
 set recolor-darkcolor           "#d3c6aa"
-
