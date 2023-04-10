@@ -6,12 +6,14 @@
 % Sidenote environment
 \newenvironment{sidenote}
 {
+    \vspace{0.5cm}
     \begin{center}
-    \begin{tcolorbox}[colback=yellow!10!white,colframe=blue!75!black,width=350px]
+    \begin{tcolorbox}[colback=yellow!10!white,colframe=pink!60!black,width=350px]
 }
 {
     \end{tcolorbox}
     \end{center}
+    \vspace{0.5cm}
 }
 
 

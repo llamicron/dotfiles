@@ -20,6 +20,8 @@ xscreensaver -no-splash &
 if [ -x /usr/bin/nm-applet ]; then
 	nm-applet --sm-disable &
 fi
+# start redshift
+redshift &
 
 
 exec xmonad

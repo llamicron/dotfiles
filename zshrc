@@ -18,6 +18,7 @@ alias l2="tree -L 2"
 # processor is under load (i think) then it fucks the audio
 alias fix_audio="pulseaudio -k"
 alias luketex="latexmk -pvc -shell-escape"
+alias vim="nvim"
 
 
 # Add Spicetify to path
