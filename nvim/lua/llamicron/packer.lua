@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use("stevearc/aerial.nvim")
+    use('numToStr/Comment.nvim')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -48,8 +50,4 @@ return require('packer').startup(function(use)
         }
     }
 
-    use("onsails/lspkind.nvim")
-    use("stevearc/aerial.nvim")
-
-    use('numToStr/Comment.nvim')
 end)
