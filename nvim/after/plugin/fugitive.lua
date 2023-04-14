@@ -6,7 +6,16 @@ vim.keymap.set("n", "<leader>ga", function()
 end)
 
 
+
 vim.keymap.set("n", "<leader>gc", function() 
-    vim.cmd("silent Git commit")
+    vim.cmd("Git commit")
+end)
+
+vim.keymap.set("n", "<leader>gp", function()
+    vim.cmd("Git push")
+end)
+
+vim.keymap.set("n", "<leader>gf", function()
+    vim.cmd("Git pull")
 end)
 
