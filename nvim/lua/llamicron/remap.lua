@@ -34,5 +34,6 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Example, 'ciw' is cut out word, deletes the current word
 --          'ci(' will cut out the content of the next perentheses
 -- similar, 'ca"' will remove everything, including the quotes
-vim.keymap.set("n", "<C-s>", "<cmd>w<cr>");
+vim.keymap.set("n", "<C-s>", "<cmd>w<cr>")
+
 
