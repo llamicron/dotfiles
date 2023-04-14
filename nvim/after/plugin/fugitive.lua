@@ -7,5 +7,6 @@ end)
 
 
 vim.keymap.set("n", "<leader>gc", function() 
-    vim.cmd("Git commit")
+    vim.cmd("silent Git commit")
 end)
+
