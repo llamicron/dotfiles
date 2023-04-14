@@ -36,4 +36,21 @@ vim.keymap.set("n", "Q", "<nop>")
 -- similar, 'ca"' will remove everything, including the quotes
 vim.keymap.set("n", "<C-s>", "<cmd>w<cr>")
 
+-- Cargo stuff
+vim.keymap.set("n", "<leader>cb", function()
+    vim.cmd("FloatermSend cargo build")
+    vim.cmd("FloatermToggle")
+end)
+
+vim.keymap.set("n", "<leader>ct", function()
+    -- Many of my applications won't succeed on multiple threads
+    -- because of shared resources like files or hardware
+    vim.cmd("FloatermSend cargo test -- --test-threads 1")
+    vim.cmd("FloatermToggle")
+end)
+
+vim.keymap.set("n", "<leader>cr", function()
+    vim.cmd("FloatermSend cargo run")
+    vim.cmd("FloatermToggle")
+end)
 
