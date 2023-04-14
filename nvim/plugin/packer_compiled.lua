@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
+  ["autoclose.nvim"] = {
+    loaded = true,
+    path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
+    url = "https://github.com/m4xshen/autoclose.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -134,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  playground = {
-    loaded = true,
-    path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/playground",
-    url = "https://github.com/nvim-treesitter/playground"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -159,6 +159,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/llamicron/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-fugitive"] = {
     loaded = true,

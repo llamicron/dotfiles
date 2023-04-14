@@ -27,3 +27,6 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "0"
 
 vim.opt.splitright = true
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+

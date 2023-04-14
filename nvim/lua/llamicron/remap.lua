@@ -1,3 +1,6 @@
+-- Some remaps for specific plugins will be in that plugins' after/plugin/plugin_name.lua file
+-- This is for global general keymaps
+
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -11,6 +14,7 @@ vim.keymap.set("n", "J", "mzJ`z")
 -- Allows for half-page jumping with cursor in the middle
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-f>", "<C-u>zz")
+
 
 -- Keeps the cursor in the middle when searching but doesn't work?
 vim.keymap.set("n", "n", "nzzzv")
@@ -30,4 +34,5 @@ vim.keymap.set("n", "Q", "<nop>")
 -- Example, 'ciw' is cut out word, deletes the current word
 --          'ci(' will cut out the content of the next perentheses
 -- similar, 'ca"' will remove everything, including the quotes
+vim.keymap.set("n", "<C-s>", "<cmd>w<cr>");
 
