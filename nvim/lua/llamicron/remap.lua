@@ -3,6 +3,8 @@
 
 local wk = require("which-key")
 local telescope_bi = require('telescope.builtin')
+local harpoon_mark = require("harpoon.mark")
+local harpoon_ui = require("harpoon.ui")
 
 vim.g.mapleader = " "
 
@@ -39,7 +41,44 @@ wk.register({
         "Search"
     },
     e = { "<cmd>Ex<cr>", "Explorer" },
+    t = {
+        "<cmd>FloatermNew --height=1.0 --width=0.5 --position=right --autoclose=2 zsh <cr>",
+        "Start terminal"
+    },
+    -- shoutout daddy prime
+    a = {
+        function()
+            harpoon_ui.toggle_quick_menu()
+        end,
+        "Harpoon!"
+    },
+    A = {
+        function()
+            harpoon_mark.add_file()
+        end,
+        "Harpoon file"
+    },
+    q = {
+        function() harpoon_ui.nav_file(1) end,
+        "Harpoon 1"
+    },
+    w = {
+        function() harpoon_ui.nav_file(2) end,
+        "Harpoon 2"
+    },
+    e = {
+        function() harpoon_ui.nav_file(3) end,
+        "Harpoon 3"
+    },
+    r = {
+        function() harpoon_ui.nav_file(4) end,
+        "Harpoon 4"
+    },
 }, { prefix = "<leader>p" })
+-- Slightly weird, i like to just hit t to toggle the terminal
+vim.keymap.set("n", "t", ":FloatermToggle <CR>")
+-- Allows hitting escape in the terminal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>:q<CR>")
 
 -- Cargo
 wk.register({
@@ -61,9 +100,28 @@ wk.register({
     },
     c = { "<cmd>Git commit<cr>", "commit" },
     -- TODO: This isn't working?
-    p = { "<cm>Git push<cr>", "push" },
-    f = { "<cm>Git pull<cr>", "pull" },
+    p = { "<cmd>Git push<cr>", "push" },
+    f = { "<cmd>Git pull<cr>", "pull" },
     s = { "<cmd>Git status<cr>", "status" }
 }, { prefix = "<leader>g" })
 
--- TODO: add more here
+wk.register({
+    name = "Layout",
+    o = {
+        "<cmd>AerialToggle<cr>",
+        "Toggle outline"
+    },
+    u = {
+        "<cmd>UndotreeToggle<cr>",
+        "Toggle UndoTree"
+    },
+    v = {
+        "<cmd>vsplit<cr>",
+        "Split Vertical"
+    },
+    s = {
+        "<cmd>split<cr>",
+        "Split Horizontal"
+    },
+}, { prefix = "<leader>l" })
+

@@ -1,7 +1,9 @@
+-- Change this to change the current theme
 function set_theme()
     kanagawa()
 end
 
+-- Rose pine theme, moon variant
 function rose_pine()
     require('rose-pine').setup({
         variant = 'moon'
@@ -10,6 +12,7 @@ function rose_pine()
     vim.cmd('colorscheme rose-pine')
 end
 
+-- Kanagawa theme
 function kanagawa()
     require('kanagawa').setup({
         colors = {
