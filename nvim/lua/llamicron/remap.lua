@@ -99,12 +99,12 @@ wk.register({
         "add ."
     },
     c = { "<cmd>Git commit<cr>", "commit" },
-    -- TODO: This isn't working?
     p = { "<cmd>Git push<cr>", "push" },
     f = { "<cmd>Git pull<cr>", "pull" },
     s = { "<cmd>Git status<cr>", "status" }
 }, { prefix = "<leader>g" })
 
+-- Layout
 wk.register({
     name = "Layout",
     o = {
