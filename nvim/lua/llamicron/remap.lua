@@ -49,6 +49,7 @@ wk.register({
     r = { "<cmd>FloatermSend cargo run<cr><cmd>FloatermToggle<cr>", "Cargo run" },
 }, { prefix = "<leader>c" })
 
+-- Git
 wk.register({
     name = "Git",
     a = {
@@ -63,3 +64,5 @@ wk.register({
     f = { "<cm>Git pull<cr>", "pull" },
     s = { "<cmd>Git status<cr>", "status" }
 }, { prefix = "<leader>g" })
+
+-- TODO: add more here
