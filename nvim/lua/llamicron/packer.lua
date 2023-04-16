@@ -4,6 +4,13 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+    -- Install themes, see theme.lua
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+    })
+    use("rebelot/kanagawa.nvim")
+
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
@@ -15,15 +22,6 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    -- Rose pine, theme
-    -- see ./theme.lua
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
 
 
     -- Treesitter
@@ -45,6 +43,8 @@ return require('packer').startup(function(use)
     use('m4xshen/autoclose.nvim')
     -- Floaterm
     use('voldikss/vim-floaterm')
+    -- Emmet
+    use('mattn/emmet-vim')
 
     -- LuaSnip for snippets
     use({

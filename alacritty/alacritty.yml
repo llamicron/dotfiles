@@ -8,7 +8,8 @@ import:
   # - ~/etc/alacritty/colors/everforest.yml
   # - ~/etc/alacritty/colors/challenger_deep.yml
   # - ~/etc/alacritty/colors/rose-pine.yml
-  - ~/etc/alacritty/colors/rose-pine-moon.yml
+  # - ~/etc/alacritty/colors/rose-pine-moon.yml
+  - ~/etc/alacritty/colors/kanagawa.yml
   - ~/etc/alacritty/fonts.yml
 
 ## Set environment variables
