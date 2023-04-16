@@ -4,16 +4,15 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    -- Install themes, see theme.lua
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+
+    -- Install themes, see after/plugin/color.lua
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
     })
     use("rebelot/kanagawa.nvim")
-
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
-
 
     -- Telescope, for finding files
     use {
@@ -22,8 +21,7 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-
-
+    -- Single line uses
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'} )
     -- Treesitter playground
@@ -44,7 +42,7 @@ return require('packer').startup(function(use)
     -- Floaterm
     use('voldikss/vim-floaterm')
     -- Emmet
-    use('mattn/emmet-vim')
+    -- use('mattn/emmet-vim')
 
     -- LuaSnip for snippets
     use({
@@ -54,6 +52,13 @@ return require('packer').startup(function(use)
         -- install jsregexp (optional!:).
         run = "make install_jsregexp"
     })
+
+    -- Which Key
+    use {
+        "folke/which-key.nvim",
+        config = function()
+        end
+    }
 
     -- LSP
     use {

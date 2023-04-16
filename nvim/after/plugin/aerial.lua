@@ -1,3 +1,3 @@
 local aerial = require("aerial")
 aerial.setup()
-vim.keymap.set("n", "<leader>o", "<cmd>AerialToggle<CR>")
+vim.api.nvim_set_keymap("n", "<leader>o", "<Plug>luasnip-expand-or-jump", { desc = "Toggle Aerial sidebar" })
