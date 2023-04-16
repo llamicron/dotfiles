@@ -60,6 +60,7 @@ wk.register({
         "add ."
     },
     c = { "<cmd>Git commit<cr>", "commit" },
+    -- TODO: This isn't working?
     p = { "<cm>Git push<cr>", "push" },
     f = { "<cm>Git pull<cr>", "pull" },
     s = { "<cmd>Git status<cr>", "status" }
