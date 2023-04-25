@@ -12,8 +12,8 @@ source $ZSH/oh-my-zsh.sh
 unalias l
 
 # Aliases
-alias l="tree -L 1"
-alias l2="tree -L 2"
+alias l="tree -L 1 --dirsfirst"
+alias l2="tree -L 2 --dirsfirst"
 # This will restart pulseaudio. I have an issue where when my 
 # processor is under load (i think) then it fucks the audio
 alias fix_audio="pulseaudio -k"

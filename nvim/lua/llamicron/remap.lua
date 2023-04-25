@@ -40,7 +40,7 @@ wk.register({
         end,
         "Search"
     },
-    e = { "<cmd>Ex<cr>", "Explorer" },
+    v = { "<cmd>Ex<cr>", "View files" },
     t = {
         "<cmd>FloatermNew --height=1.0 --width=0.5 --position=right --autoclose=2 zsh <cr>",
         "Start terminal"
@@ -55,6 +55,7 @@ wk.register({
     A = {
         function()
             harpoon_mark.add_file()
+            print("Ahoy!!! Harpooned!!!")
         end,
         "Harpoon file"
     },

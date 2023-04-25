@@ -12,6 +12,8 @@ import XMonad.Layout.NoBorders
 import Data.Ratio
 import XMonad.Layout.PerWorkspace
 import XMonad.Layout.Spacing
+import XMonad.Layout.Gaps
+import XMonad.Layout.Spiral
 import XMonad.Layout.Grid
 import XMonad.Layout.IM
 
@@ -30,15 +32,31 @@ main :: IO ()
 main = do 
     xmonad =<< xmobar myConf
 
+
+myLayouts = spacing 25 $
+            layoutTall ||| layoutGrid ||| layoutMirror ||| layoutFull
+    where
+      layoutTall = Tall 1 (3/100) (1/2)
+      layoutSpiral = spiral (125 % 146)
+      layoutGrid = Grid
+      layoutMirror = Mirror (Tall 1 (3/100) (3/5))
+      layoutFull = Full
+
+-- myLayouts = spacing 0 $ Tall 1 (3/100) (1/2) ||| Full
+-- myLayouts = gaps [(U, 25), (D, 25), (R, 25), (L, 25)] $ Tall 1 (3/100) (1/2) ||| Full
+
+
 -- |Main configuration
 myConf = defaultConfig
    {
      modMask = mod4Mask
    , terminal = "alacritty"
+   -- , layoutHook = smartBorders $ myLayouts
    , layoutHook = smartBorders $ myLayouts
    , workspaces = myWorkspaces
    , borderWidth = 2
-   , focusedBorderColor = "#d699b6"
+   -- Color taken from the kanagawa theme (blue)
+   , focusedBorderColor = "#7e9cd8"
    , keys = myKeys
    }
 
@@ -80,4 +98,3 @@ myKeys x = foldr M.delete (keysToAdd' x) (keysToDel x)
 -- |Workspaces listing
 myWorkspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
-myLayouts = spacing 25 $ Tall 1 (3/100) (1/2) ||| Full
