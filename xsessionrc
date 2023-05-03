@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly WALLPAPER_DIR=/home/llamicron/usr/img/backgrounds/
+readonly WALLPAPER_DIR=~/etc/wallpapers
 
 # Load Resources
 xrdb -merge .Xresources
