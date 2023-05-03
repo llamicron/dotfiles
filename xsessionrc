@@ -1,5 +1,7 @@
 #!/bin/bash
 
+readonly WALLPAPER_DIR=/home/llamicron/usr/img/backgrounds/
+
 # Load Resources
 xrdb -merge .Xresources
 
@@ -10,7 +12,7 @@ udiskie &
 ~/.screenlayout/main.sh
 
 # Set wallpaper
-feh --bg-scale /home/llamicron/usr/img/backgrounds/irl/forest.jpg
+feh --bg-scale "$WALLPAPER_DIR/irl/mushroom.jpg"
 
 # Set default terminal to alacritty
 terminal = "~/.cargo/bin/alacritty"

@@ -1,31 +1,31 @@
 
-xmonad.hs:37:13: warning: [-Wdeprecations]
+xmonad.hs:36:13: warning: [-Wdeprecations]
     In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
    |
-37 | myLayouts = spacing 25 $
+36 | myLayouts = spacing 25 $
    |             ^^^^^^^
 
-xmonad.hs:54:10: warning: [-Wdeprecations]
+xmonad.hs:50:10: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-54 | myConf = defaultConfig
+50 | myConf = defaultConfig
    |          ^^^^^^^^^^^^^
 
-xmonad.hs:91:43: warning: [-Wdeprecations]
+xmonad.hs:87:43: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-91 |        | (i, k) <- zip (XMonad.workspaces defaultConfig) [10 .. 19]
+87 |        | (i, k) <- zip (XMonad.workspaces defaultConfig) [10 .. 19]
    |                                           ^^^^^^^^^^^^^
 
-xmonad.hs:100:34: warning: [-Wdeprecations]
+xmonad.hs:96:34: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
-    |
-100 |     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
-    |                                  ^^^^^^^^^^^^^
+   |
+96 |     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
+   |                                  ^^^^^^^^^^^^^
