@@ -124,5 +124,9 @@ wk.register({
         "<cmd>split<cr>",
         "Split Horizontal"
     },
+    w = {
+        "<cmd>set wrap!<cr>",
+        "Toggle Line Wrapping"
+    }
 }, { prefix = "<leader>l" })
 
