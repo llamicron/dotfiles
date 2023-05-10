@@ -75,12 +75,17 @@ keysToAdd x =
     , ((mod4Mask, xK_a), spawn "firefox --new-window https://app.asana.com/")
     , ((mod4Mask, xK_g), spawn "firefox --new-tab https://github.com/")
     , ((mod4Mask, xK_x), spawn "obsidian")
-    , ((mod4Mask .|. shiftMask, xK_x), spawn "push_notes.sh")
     , ((mod4Mask .|. shiftMask, xK_f), spawn myFileManager)
     -- Volume Controls
     , ((mod4Mask .|. shiftMask, xK_comma), spawn "amixer -D pulse sset Master 10%-")
     , ((mod4Mask .|. shiftMask, xK_period), spawn "amixer -D pulse sset Master 10%+")
     , ((mod4Mask .|. shiftMask, xK_m), spawn "amixer -D pulse sset Master toggle")
+    -- Screenshot stuff
+    -- mod+shift+[ will screenshot a rectangular area
+    , ((mod4Mask .|. shiftMask, xK_bracketleft), spawn "ksnip -r")
+    -- mod+shift+] will screenshot the current focused window 
+    , ((mod4Mask .|. shiftMask, xK_bracketright), spawn "ksnip -a")
+
     ]
     ++
     [((m .|. homeMask, k), windows $ f i) 

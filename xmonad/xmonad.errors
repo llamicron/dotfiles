@@ -14,18 +14,18 @@ xmonad.hs:50:10: warning: [-Wdeprecations]
 50 | myConf = defaultConfig
    |          ^^^^^^^^^^^^^
 
-xmonad.hs:87:43: warning: [-Wdeprecations]
+xmonad.hs:90:43: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-87 |        | (i, k) <- zip (XMonad.workspaces defaultConfig) [10 .. 19]
+90 |        | (i, k) <- zip (XMonad.workspaces defaultConfig) [10 .. 19]
    |                                           ^^^^^^^^^^^^^
 
-xmonad.hs:96:34: warning: [-Wdeprecations]
+xmonad.hs:99:34: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-96 |     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
+99 |     keysToAdd' x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
    |                                  ^^^^^^^^^^^^^
