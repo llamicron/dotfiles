@@ -77,8 +77,8 @@ keysToAdd x =
     , ((mod4Mask, xK_x), spawn "obsidian")
     , ((mod4Mask .|. shiftMask, xK_f), spawn myFileManager)
     -- Volume Controls
-    , ((mod4Mask .|. shiftMask, xK_comma), spawn "amixer -D pulse sset Master 10%-")
-    , ((mod4Mask .|. shiftMask, xK_period), spawn "amixer -D pulse sset Master 10%+")
+    , ((mod4Mask .|. shiftMask, xK_comma), spawn "amixer -D pulse sset Master 5%-")
+    , ((mod4Mask .|. shiftMask, xK_period), spawn "amixer -D pulse sset Master 5%+")
     , ((mod4Mask .|. shiftMask, xK_m), spawn "amixer -D pulse sset Master toggle")
     -- Screenshot stuff
     -- mod+shift+[ will screenshot a rectangular area
