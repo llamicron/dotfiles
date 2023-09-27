@@ -1,4 +1,4 @@
-Config { font = "xft:Bitstream Fira Code:size=10:bold:antialias=true"
+Config { font = "xft:Bitstream Fira Code:size=12:bold:antialias=true"
         , bgColor = "#2b3339"
         , fgColor = "#d3c6aa"
         , position = TopW L 100

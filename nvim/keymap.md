@@ -21,3 +21,5 @@ This is a non-exhaustive list of keymaps that I use. I'll add more here as I see
 * `<leader>ps` - Project search (grep through project and find all files that match)
 * `<C-p>` - Project git find (fuzzy find all files in Git)
 
+## Editing
+* `z` - folding stuff (and more)

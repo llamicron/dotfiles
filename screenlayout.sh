@@ -1,7 +1,24 @@
 #!/bin/sh
-xrandr \
-    --output DisplayPort-0 --primary --mode 2560x1440 --pos 1920x0 --rotate normal \
-    --output HDMI-0 --mode 2560x1440 --pos 0x180 --rotate normal \
-    --output DVI-0 --mode 2560x1440 --pos 4480x0 --rotate normal \
-    --output DVI-1 --off
+
+readonly WALLPAPER_DIR=/home/llamicron/etc/wallpapers
+
+output=$(xrandr)
+
+num_displays=$(echo "$output" | grep -c " connected")
+
+if [ "$num_displays" -gt 1 ]; then
+    # If we have both displays connected, then configure both
+    xrandr \
+        --output DisplayPort-0 --mode 2560x1440 --rotate right \
+        --output HDMI-0 --mode 2560x1440 --rotate normal --right-of DisplayPort-0
+else
+    # otherwise, just configure the left one, rotated right.
+    xrandr \
+        --output DisplayPort-0 --mode 2560x1440 --rotate right
+fi
+
+# Set wallpaper
+readonly LEFT_WALLPAPER="$WALLPAPER_DIR/irl/yosemite_vertical.jpg"
+readonly RIGHT_WALLPAPER="$WALLPAPER_DIR/irl/mushroom.jpg"
+feh --bg-scale $LEFT_WALLPAPER --bg-scale $RIGHT_WALLPAPER
 

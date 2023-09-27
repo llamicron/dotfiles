@@ -68,6 +68,9 @@ homeMask =  133 -- from the xev data
 keysToAdd x =
     [ ((mod4Mask, xK_F4 ), kill)
     , ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
+    -- Grow/shrink the main window
+    , ((mod4Mask, xK_h), sendMessage Shrink)
+    , ((mod4Mask, xK_l), sendMessage Expand)
     -- Programs
     , ((mod4Mask, xK_f), spawn myBrowser)
     , ((mod4Mask, xK_s), spawn myMusic)

@@ -40,7 +40,11 @@ return require('packer').startup(function(use)
     -- Floaterm
     use('voldikss/vim-floaterm')
     -- Emmet
-    -- use('mattn/emmet-vim')
+    use('mattn/emmet-vim')
+    -- Icons
+    use("nvim-tree/nvim-web-devicons")
+    -- Trouble
+    use("folke/trouble.nvim")
 
     -- LuaSnip for snippets
     use({

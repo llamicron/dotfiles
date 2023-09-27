@@ -1,7 +1,5 @@
 #!/bin/bash
 
-readonly WALLPAPER_DIR=~/etc/wallpapers
-
 # Load Resources
 xrdb -merge .Xresources
 
@@ -10,9 +8,6 @@ udiskie &
 
 # Configure monitor layout with arandr
 /home/llamicron/etc/screenlayout.sh
-
-# Set wallpaper
-feh --bg-scale "$WALLPAPER_DIR/irl/mushroom.jpg"
 
 # Set default terminal to alacritty
 terminal = "~/.cargo/bin/alacritty"

@@ -28,17 +28,24 @@ vim.keymap.set("n", "Q", "<nop>")
 -- ctrl-s to save
 vim.keymap.set("n", "<C-s>", "<cmd>w<cr>")
 
+-- Temporary, move this somewhere else
+vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
 
 -- Project
 wk.register({
     name = "Project",
     f = { telescope_bi.find_files, "Find file" },
     g = { telescope_bi.git_files, "Find Git file" },
-    s = { 
+    p = { "<cmd>TroubleToggle<cr>", "Toggle Problems" },
+    s = {
         function () 
             telescope_bi.grep_string({ search = vim.fn.input("Grep > ") })
         end,
         "Search"
+    },
+    o = {
+        "<cmd>AerialToggle<cr>",
+        "Toggle outline"
     },
     v = { "<cmd>Ex<cr>", "View files" },
     t = {
@@ -87,6 +94,7 @@ wk.register({
     b = { "<cmd>FloatermSend cargo build<cr><cmd>FloatermToggle<cr>", "Cargo build" },
     t = { "<cmd>FloatermSend cargo test -- --test-threads 1<cr><cmd>FloatermToggle<cr>", "Cargo test" },
     r = { "<cmd>FloatermSend cargo run<cr><cmd>FloatermToggle<cr>", "Cargo run" },
+    c = { "<cmd>FloatermSend cargo check<cr><cmd>FloatermToggle<cr>", "Cargo Check"},
 }, { prefix = "<leader>c" })
 
 -- Git
@@ -108,10 +116,6 @@ wk.register({
 -- Layout
 wk.register({
     name = "Layout",
-    o = {
-        "<cmd>AerialToggle<cr>",
-        "Toggle outline"
-    },
     u = {
         "<cmd>UndotreeToggle<cr>",
         "Toggle UndoTree"
