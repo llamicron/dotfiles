@@ -2,6 +2,9 @@
 
 readonly WALLPAPER_DIR=/home/llamicron/etc/wallpapers
 
+readonly LEFT_WALLPAPER="$WALLPAPER_DIR/irl/yosemite_vertical.jpg"
+readonly RIGHT_WALLPAPER="$WALLPAPER_DIR/irl/el_cap.jpg"
+
 output=$(xrandr)
 
 num_displays=$(echo "$output" | grep -c " connected")
@@ -18,7 +21,5 @@ else
 fi
 
 # Set wallpaper
-readonly LEFT_WALLPAPER="$WALLPAPER_DIR/irl/yosemite_vertical.jpg"
-readonly RIGHT_WALLPAPER="$WALLPAPER_DIR/irl/mushroom.jpg"
 feh --bg-scale $LEFT_WALLPAPER --bg-scale $RIGHT_WALLPAPER
 
